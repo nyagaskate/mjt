@@ -1,6 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import SkateClub from './skate-club';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<SkateClub />);
+export default function SkateClub() {
+  return (
+    <div>
+      <h1>🛹 スケート部</h1>
+      <p>ここにコンテンツを追加しよう！</p>
+    </div>
+  );
+}
