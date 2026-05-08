@@ -256,6 +256,11 @@ export default function App() {
     setMembers(prev => [...prev, { id: Date.now(), number: String(prev.length + 1).padStart(2, "0"), role: "部員", ...form }]);
     closeModal();
   };
+  const handleMemberDelete = (id) => {
+    if (window.confirm("このメンバーを削除しますか？")) {
+      setMembers(prev => prev.filter(m => m.id !== id));
+    }
+  };
   const handleNoticeSave = () => {
     if (!form.title) return;
     setNotices(prev => [{ id: Date.now(), date: new Date().toISOString().slice(0,10), ...form }, ...prev]);
@@ -484,6 +489,7 @@ export default function App() {
                         <div className="member-sub">{m.grade}</div>
                       </div>
                       <span className={`role-badge ${m.role === "部長" ? "captain" : ""}`}>{m.role}</span>
+                      <button onClick={() => handleMemberDelete(m.id)} style={{background:"#e74c3c",color:"white",border:"none",borderRadius:"6px",padding:"4px 10px",cursor:"pointer",fontSize:"0.75rem",fontWeight:"700"}}>削除</button>
                     </div>
                   </div>
                 ))}
