@@ -6,10 +6,8 @@ const LOGO_B64 = "/9j/4AAQSkZJRgABAQAASABIAAD/4QCMRXhpZgAATU0AKgAAAAgABQESAAMAAA
 // ===== サンプルデータ =====
 const initialMembers = [
   { id: 1,  name: "福嶋 新",      grade: "中2", role: "部員", number: "01" },
-  { id: 2,  name: "渡辺 逸輝",    grade: "中2", role: "部員", number: "02" },
   { id: 3,  name: "坂本 有希奈",  grade: "中1", role: "部員", number: "03" },
-  { id: 4,  name: "田中 湊翔",    grade: "小6", role: "部員", number: "04" },
-  { id: 5,  name: "黒岩 美洸",    grade: "小6", role: "部員", number: "05" },
+   { id: 5,  name: "黒岩 美洸",    grade: "小6", role: "部員", number: "05" },
   { id: 6,  name: "土屋 寧音",    grade: "小6", role: "部員", number: "06" },
   { id: 7,  name: "関口 涼介",    grade: "小5", role: "部員", number: "07" },
   { id: 8,  name: "福嶋 寛太",    grade: "小5", role: "部員", number: "08" },
@@ -17,7 +15,6 @@ const initialMembers = [
   { id: 10, name: "黒岩 晄太",    grade: "小5", role: "部員", number: "10" },
   { id: 11, name: "佐藤 椛香",    grade: "小5", role: "部員", number: "11" },
   { id: 12, name: "宮崎 結菜",    grade: "小5", role: "部員", number: "12" },
-  { id: 13, name: "小川 幸和人",  grade: "小4", role: "部員", number: "13" },
   { id: 14, name: "重原 実緒",    grade: "小4", role: "部員", number: "14" },
   { id: 15, name: "小金澤 雫",    grade: "小4", role: "部員", number: "15" },
   { id: 16, name: "重原 瑛太",    grade: "小2", role: "部員", number: "16" },
